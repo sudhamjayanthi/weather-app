@@ -14,9 +14,21 @@ table = soup.find(id ='wt-ext')
 
 page_bg_img = '''
 <style>
-body {
-background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+body, html {
+  height: 100%;
+}
 
+.bg { 
+  /* The image used */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNd9WjgkHO3Oh00fbvHKVCz42aA6OsztNvVg&usqp=CAU");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
 '''
